@@ -3,86 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Félicitations, Thierno Hamidou !</title>
+    <title>Diplôme de Félicitations</title>
     <style>
-        /* Reset CSS */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            background-color: #f0f2f5;
             margin: 0;
-        }
-
-        .container {
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-            width: 80%;
-            max-width: 800px;
+            padding: 0;
             text-align: center;
         }
 
-        h1 {
-            font-size: 36px;
-            color: #4CAF50;
-            margin-bottom: 20px;
-            animation: fadeIn 2s ease-out;
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            font-size: 1.5em;
         }
 
-        p {
-            font-size: 18px;
-            color: #555;
+        .content {
+            padding: 40px 20px;
+        }
+
+        .certificate {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 10px solid #f39c12;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .certificate h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .certificate p {
+            font-size: 1.2em;
             line-height: 1.6;
-            animation: fadeIn 2s ease-out 1s;
+            color: #555;
         }
 
         .btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 30px;
-            font-size: 18px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 30px;
-            text-decoration: none;
             display: inline-block;
-            animation: fadeIn 2s ease-out 2s;
+            padding: 10px 30px;
+            margin-top: 20px;
+            background-color: #f39c12;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
         }
 
         .btn:hover {
-            background-color: #45a049;
+            background-color: #e67e22;
         }
-
-        /* Animation */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Félicitations, Thierno Hamidou Diallo !</h1>
-        <p>Nous sommes très heureux de vous féliciter pour avoir terminé avec succès la formation Microsoft Word, Excel, Access. Grâce à vos efforts et votre détermination, vous avez acquis des compétences essentielles qui vous ouvriront de nombreuses portes professionnelles. Nous vous souhaitons une brillante carrière et beaucoup de succès dans vos futurs projets.</p>
+
+<header>
+    Diplôme de Félicitations
+</header>
+
+<div class="content">
+    <div class="certificate">
+        <h2>Félicitations à Thierno Hamidou !</h2>
+        <p>Nous sommes heureux de vous remettre ce diplôme pour avoir brillamment suivi la formation <strong>Microsoft Word, Excel et Access</strong>. Votre travail acharné et votre engagement vous ont permis d'acquérir des compétences exceptionnelles dans ces outils essentiels à la productivité.</p>
+        <p>Ce diplôme atteste de vos compétences et de votre succès dans la formation, et vous ouvre de nombreuses opportunités professionnelles.</p>
+        
+        <!-- Affichage du PDF dans la page -->
+        <iframe src="https://yourusername.github.io/felicitations/votre_diplome.pdf" width="100%" height="600px">
+            Votre navigateur ne supporte pas l'affichage des PDF. Vous pouvez télécharger le fichier en cliquant sur le lien suivant :
+            <a href="https://yourusername.github.io/felicitations/votre_diplome.pdf">Télécharger le diplôme</a>.
+        </iframe>
+
+        <!-- Lien de téléchargement du PDF -->
+        <a href="https://yourusername.github.io/felicitations/votre_diplome.pdf" class="btn" download>Télécharger votre diplôme</a>
     </div>
+</div>
+
 </body>
 </html>
